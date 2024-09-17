@@ -126,10 +126,13 @@ nav ul {
   justify-content: center;
   gap: 40px;
   list-style: none;
+  align-items: center;
 }
 
 nav ul img {
+  display: flex;
   cursor: pointer;
+  align-items: center;
 }
 
 nav ul li a {
@@ -221,6 +224,7 @@ nav.fill ul li a:hover:after {
   width: 100%;
   list-style: none;
 }
+
 .sidebar li a {
   color: #FFF;
 }
@@ -705,163 +709,181 @@ footer a {
   p {
     font-size: 12px;
   }
-  .btn{
+
+  .btn {
     font-size: 12px;
     padding: 10px 20px;
   }
-  
-.hide-on-mobile {
-  display: none;
-}
 
-.menu-btn {
-  display: block;
-}
+  .hide-on-mobile {
+    display: none;
+  }
 
- #hero,
- #about,
- #destinations,
- #packages,
- #testimonial,
- #contact-us,
- #footer {
-   padding: 50px 20px;
- }
+  .menu-btn {
+    display: block;
+  }
 
- .hero-container, .hero-container h1 b{
-  width: 100%;
- }
+  #hero,
+  #about,
+  #destinations,
+  #packages,
+  #testimonial,
+  #contact-us,
+  #footer {
+    padding: 50px 20px;
+  }
 
- .hero-contents{
-  width: 100%;
-  height: 500px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 0px;
- }
+  .hero-container,
+  .hero-container h1 b {
+    width: 100%;
+  }
 
-#about-us-container{
-  flex-direction: column-reverse;
-  padding: 50px 20px;
-}
+  .hero-contents {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0px;
+  }
 
-.about-us-content{
-  width: 100%;
-  align-items: center;
-}
-.about-us-content h5{
-  text-align: center;
-}
+  #about-us-container {
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+  }
 
-.about-us-images{
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-}
+  .about-us-content {
+    width: 100%;
+    align-items: center;
+  }
 
-.about-us-images-col1{
-  width: 100%;
-}
-.about-us-images-col2{
-  width: 100%;
-}
-.about-us-images img { 
-  width: 100%;
-}
+  .about-us-content h5 {
+    text-align: center;
+  }
 
-.destinations-container-top{
-  flex-direction: column;
-  width: 100%;
-}
-.destinations-container-top h5{
-  text-align: center;
-}
-.destinations-container-top-btn{
-  display: none;
-}
+  .about-us-images {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
 
-.destination-images{
-  flex-direction: column;
-  width: 100%;
-}
-.destination-images .image{
-  width: 100%;
-}
+  .about-us-images-col1 {
+    width: 100%;
+  }
 
-.packages-container{
-  flex-direction: column;
-  width: 100%;
-}
+  .about-us-images-col2 {
+    width: 100%;
+  }
 
-.packages-container-left{
-  width: 100%;
-  align-items: center;
-}
-.packages-header{
-width: 100%;
-}
-.packages-header h5{
-  text-align: center;
-}
+  .about-us-images img {
+    width: 100%;
+  }
 
-.packages-images{
-  width: 100%;
-}
+  .destinations-container-top {
+    flex-direction: column;
+    width: 100%;
+  }
 
-.testimonial-container-top{
-  flex-direction: column;
-}
-.testimonial-container-top-btn{
-  display: none;
-}
+  .destinations-container-top h5 {
+    text-align: center;
+  }
 
-.testimonial-contents{
-  flex-direction: column;
-  width: 100%;
-}
-.client{
-  width: 100%;
-}
+  .destinations-container-top-btn {
+    display: none;
+  }
 
-.contact-us-container{
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-}
-.contact-us-text{
-  width: 100%;
-  text-align: center;
-}
+  .destination-images {
+    flex-direction: column;
+    width: 100%;
+  }
 
-.contact-us-input{
-  gap: 20px;
-  flex-direction: column;
-  width: 100%;
-}
-.contact-us-input div{
-  flex-direction: column;
-  width: 100%;
-}
-.contact-us-input button{
-  font-size: 12px;
-  padding: 10px 20px;
-}
+  .destination-images .image {
+    width: 100%;
+  }
 
- .footer-container{
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  gap: 50px;
- }
-.byoerr{
-  align-items: center;
-  width: 100%;
-}
-.quick-links, .resources{
-  width: 100%;
-  align-items: center;
-}
+  .packages-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .packages-container-left {
+    width: 100%;
+    align-items: center;
+  }
+
+  .packages-header {
+    width: 100%;
+  }
+
+  .packages-header h5 {
+    text-align: center;
+  }
+
+  .packages-images {
+    width: 100%;
+  }
+
+  .testimonial-container-top {
+    flex-direction: column;
+  }
+
+  .testimonial-container-top-btn {
+    display: none;
+  }
+
+  .testimonial-contents {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .client {
+    width: 100%;
+  }
+
+  .contact-us-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .contact-us-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-us-input {
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-us-input div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-us-input button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .byoerr {
+    align-items: center;
+    width: 100%;
+  }
+
+  .quick-links,
+  .resources {
+    width: 100%;
+    align-items: center;
+  }
 }
